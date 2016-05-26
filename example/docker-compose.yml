@@ -1,5 +1,5 @@
 ddclient:
-  build: joebiellik/ddclient
+  image: joebiellik/ddclient
 
   volumes:
     # You must provide a ddclient config file
