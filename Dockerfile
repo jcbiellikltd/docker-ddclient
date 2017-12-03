@@ -2,7 +2,7 @@ FROM debian:stable
 
 RUN set -xe \
 	&& apt-get update \
-	&& apt-get -y install ddclient libio-socket-ssl-perl \
+	&& DEBIAN_FRONTEND=noninteractive apt-get -y install ddclient libio-socket-ssl-perl \
 	&& rm -rf /var/lib/apt/lists/*
 
 VOLUME ["/config/ddclient.conf"]
