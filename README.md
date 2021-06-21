@@ -17,6 +17,8 @@ See [example directory](https://github.com/jcbiellikltd/docker-ddclient/tree/mas
 ddclient:
   image: joebiellik/ddclient
 
+  tty: true # Required to capture logs
+
   volumes:
     # You must provide a ddclient config file
     - ./ddclient.conf:/config/ddclient.conf
